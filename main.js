@@ -2,6 +2,7 @@
 if (false) {
     BK.Script.loadlib('GameRes://libs/qqplay-adapter.js');
 }
+
 var loadingBool = true;
 var loadingNum = 0;
 window.boot = function() {
