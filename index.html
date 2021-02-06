@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>合成大西瓜</title>
+    <title>合成大总攻</title>
 
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
@@ -63,15 +63,15 @@
         }
     </script> -->
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/style-mobile.css" />
-    <script src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/layer/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/layer/layer.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/layer/layer.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/style-mobile.css" />
+    <script src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/layer/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/layer/layer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/layer/layer.css" rel="stylesheet">
 
 </head>
 
 <body style="margin: 0; background: #ddd;" align="center">
-    <div style="align:center;display: none"><img src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/res/share.jpg" width="10%" /></div>
+    <div style="align:center;display: none"><img src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/res/share.jpg" width="10%" /></div>
 
     <div id="canvasDiv" style="width:100%;height:100%;">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
@@ -93,7 +93,7 @@
     </div>
 
     <div id="loadingImg" style="top:45%;width: 100%;position:absolute; ">
-        <img src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/res/loading.gif" width="7%" height="7%" />
+        <img src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/res/loading.gif" width="7%" height="7%" />
     </div>
 
     <!-- 判断浏览器是否屏蔽广告 -->
@@ -111,9 +111,9 @@
     <!--<div align="center" style="font-size: 10px;color: dimgrey">advertisement</div>-->
 
     <!-- <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script> -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/ads.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/ads.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/src/settings.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/src/settings.js" charset="utf-8"></script>
 
     <script type="text/javascript">
         var preloader;
@@ -130,11 +130,11 @@
             //        console.log("window.navigator.language",window.navigator.language);
 
             if (window.navigator.language == "zh-CN" || window.navigator.language == "zh-cn") {
-                document.title = "小游戏：合成大西瓜";
+                document.title = "小游戏：合成小奶狗";
             } else if (window.navigator.language == "zh-TW") {
-                document.title = "小遊戲：合成大西瓜";
+                document.title = "小遊戲：合成小奶狗";
             } else if (window.navigator.language == "zh-HK") {
-                document.title = "小遊戲：合成大西瓜";
+                document.title = "小遊戲：合成小奶狗";
             } else if (window.navigator.language == "ko-KR") {
                 document.title = "작은 놀이：큰 수박 을 합성 하 다";
             } else if (window.navigator.language == "ja-JP") {
@@ -179,21 +179,21 @@
       , moveType: 1 //拖拽模式，0或者1
       , content:
          '<div style="padding: 10px;text-align:center; line-height: 5px; background-color: #393D49; color: #fff;"><h4>模式选择</h4>'
-        + '<button name="difficulty" onclick="changeDifficulty(this,[0,10])">随缘Play</button><br>'
-        + '<button name="difficulty" onclick="changeDifficulty(this,[0,0])">圣雄肝帝</button><br>'
-        + '<button name="difficulty" style="background-color:#1E9FFF" onclick="changeDifficulty(this,[0,5])">原汁原味</button><br>'
-        + '<button name="difficulty" onclick="changeDifficulty(this,[5,5])">作弊模式</button><br>'
-        + '<button name="difficulty" onclick="changeDifficulty(this,[2,7])">去除小瓜</button><br>'
-        + '<button name="difficulty" onclick="changeDifficulty(this,[9,9])">暴力吃瓜</button><br>'  
-        + '</div>'
-        + '<div style="padding: 10px;text-align:center; line-height: 5px; background-color: #393D49; color: #fff;"><h4>分数选择</h4>'
-        + '<button name="fanbei" onclick="multipleScore(this,2)">两倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,5)">五倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,10)">十倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,100)">百倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,1000)">千倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,10000)">万倍暴击</button><br>'
-        + '<button name="fanbei" onclick="multipleScore(this,100000)">十万伏特</button><br>'
+        <!-- + '<button name="difficulty" onclick="changeDifficulty(this,[0,10])">随缘Play</button><br>' -->
+        + '<button name="difficulty" onclick="changeDifficulty(this,[0,0])">肝帝</button><br>'
+        + '<button name="difficulty" style="background-color:#1E9FFF" onclick="changeDifficulty(this,[0,5])">原版</button><br>'
+        <!-- + '<button name="difficulty" onclick="changeDifficulty(this,[5,5])">作弊模式</button><br>' -->
+        <!-- + '<button name="difficulty" onclick="changeDifficulty(this,[2,7])">去除小瓜</button><br>' -->
+        <!-- + '<button name="difficulty" onclick="changeDifficulty(this,[9,9])">暴力吃瓜</button><br>'   -->
+        <!-- + '</div>' -->
+        <!-- + '<div style="padding: 10px;text-align:center; line-height: 5px; background-color: #393D49; color: #fff;"><h4>分数选择</h4>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,2)">两倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,5)">五倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,10)">十倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,100)">百倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,1000)">千倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,10000)">万倍暴击</button><br>' -->
+        <!-- + '<button name="fanbei" onclick="multipleScore(this,100000)">十万伏特</button><br>' -->
         + '</div>',
 
 
@@ -289,9 +289,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/src/settings.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/src/settings.js" charset="utf-8"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/main.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/main.js" charset="utf-8"></script>
 
 
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
@@ -345,7 +345,7 @@
 
             var cocos2d = document.createElement('script');
             cocos2d.async = true;
-            cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/xiaopengand/daxigua@master/cocos2d-js-min.js';
+            cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/lxcoo/lxcoo/cocos2d-js-min.js';
 
             var engineLoaded = function() {
                 document.body.removeChild(cocos2d);
