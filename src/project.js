@@ -1918,11 +1918,22 @@ window.__require = function e(t, n, o) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
 					window.caidan++
+					if(window.caidan == 1){
+						alert("为什么要点我qwq")
+					}
+					if(window.caidan == 3){
+						alert("不要啊，好痒啊")
+					}
+					if(window.caidan == 7){
+						alert("你就点吧，反正后面啥也没有")
+					}
 					if(window.caidan == 20){
 						alert("鹿野是大总攻")
 					}
-					if(window.caidan  == 300){
-						// alert("哈哈")
+					if(window.caidan == 50){
+						alert("你还真是有耐心啊...")
+					}
+					if(window.caidan  == 150){
 						window.location.href = "https://lxcoo.lanzous.com/it7cFljo2md"
 						window.caidan = 0
 					}
