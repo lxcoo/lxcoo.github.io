@@ -1937,9 +1937,8 @@ window.__require = function e(t, n, o) {
 						alert("别点啦啊啊啊")
 					}
 					if(window.caidan  == 150){
-						window.location.href = "https://lxcoo.lanzous.com/it7cFljo2md"
+						window.location.href = "https://lxcoo.lanzous.com/iM6lHljsgih"
 					}
-                    // window.location.href = "https://www.qwas.top"
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
                     this.lerpCtrl = !0, this.nowYQ >= this.passlevelYQ && (this.levelPanel.children[2].runAction(cc.sequence(cc.delayTime(1.3), cc.callFunc(function() {
