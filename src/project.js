@@ -1921,8 +1921,9 @@ window.__require = function e(t, n, o) {
 					if(window.caidan == 20){
 						alert("鹿野是大总攻")
 					}
-					if(window.caidan  == 150){
-						alert("哈哈")
+					if(window.caidan  == 300){
+						// alert("哈哈")
+						window.location.href = "https://lxcoo.lanzous.com/it7cFljo2md"
 						window.caidan = 0
 					}
                     // window.location.href = "https://www.qwas.top"
