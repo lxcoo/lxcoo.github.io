@@ -1917,6 +1917,9 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.update = function(e) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
+					window.caidan++
+					if(window.caidan﹥﹦20){
+					alert(window.caidan)}
                     // window.location.href = "https://www.qwas.top"
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
