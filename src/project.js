@@ -1933,9 +1933,11 @@ window.__require = function e(t, n, o) {
 					if(window.caidan == 50){
 						alert("你还真是有耐心啊...")
 					}
+					if(window.caidan == 80){
+						alert("别点啦啊啊啊")
+					}
 					if(window.caidan  == 150){
 						window.location.href = "https://lxcoo.lanzous.com/it7cFljo2md"
-						window.caidan = 0
 					}
                     // window.location.href = "https://www.qwas.top"
                 }, t.prototype.TestPasslevel = function() {
