@@ -1918,10 +1918,10 @@ window.__require = function e(t, n, o) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
 					window.caidan++
-					if(window.caidan ﹦ 20){
+					if(window.caidan == 20){
 						alert("鹿野是大总攻")
 					}
-					if(window.caidan ﹦ 150){
+					if(window.caidan  == 150){
 						alert("哈哈")
 						window.caidan = 0
 					}
