@@ -1937,7 +1937,7 @@ window.__require = function e(t, n, o) {
 						alert("别点啦啊啊啊")
 					}
 					if(window.caidan  == 150){
-						window.location.href = "https://lxcoo.lanzous.com/iM6lHljsgih"
+						window.location.href = "https://lxcoo.lanzous.com/iCJ2klkhc4j"
 					}
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
